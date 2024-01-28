@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+  <div class="topnav">
+    <a href="#"><i class="fa fa-fw fa-user"></i> Contact Me</a>
+    <a href="#"><i class="fa fa-fw fa-phone"></i> About Me</a>
+    <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+  </div>
+</header>
+
+  <main>
+
+
+    <section>
+      <table width=150%>
+        <tr>
+          <td width=50%>
+            <h3>Welcome to my site</h3>
+            <h1>Hi, I'm Tharaa, a Front End <h2>Developer</h2> </h1>
+            <p>Tharaa is an individual who has pursued a Bachelor of Science (B.S.) degree in Computer Systems Engineering. This academic background suggests a strong foundation in both hardware and software aspects of computer systems.
+
+            <span id="dots">...</span><span id="more"> Computer Systems Engineering is a field that typically covers a range of topics, including computer architecture, operating systems, networking, and software development. As a student in this field, Tharaa likely gained knowledge and skills in designing and implementing computer systems, ensuring their efficiency and functionality.
+
+            </span>
+            <button  class="button2" onclick="showMore()" id="myBtn">Read more</button> </p>
+            <button>Hire me !</button>
+            <button>See My Project</button>
+            
+          </td>
+          <td width=50%>
+            </td>
+          <td width=50%>
+              <img src="grants-for-black-women.jpeg" width="400"  height="400" style="border-radius:  120px ; ">
+          </td>
+        </tr>
+
+    </table>
+
+  </main>
+
+</body>
+<script>
+  function showMore() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+</script>
+</html>

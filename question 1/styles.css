@@ -1,0 +1,114 @@
+/* Define CSS variables for colors */
+:root {
+    --primary-color: #D1884F;
+    --secondary-color: #008AAA;
+    --accent-color: #3BBADB;
+  }
+  
+  /* Apply Poppins font */
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Style header */
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Style main section */
+  main section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  main h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  main h1 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+  }
+    main h3 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+  }
+  
+  main p {
+    margin-bottom: 20px;
+  }
+  
+  main button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .button2 {
+    color: rgb(0, 26, 255);
+    background-color: rgb(255, 255, 255);
+
+  }
+  .button2:hover {
+    color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+
+  }
+  .topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+
+  color: var(--primary-color);
+}
+
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+ 
+  
+  /* Style footer */
+  footer {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+    }
+  
+    nav a {
+      padding: 10px;
+    }
+  }
+  
